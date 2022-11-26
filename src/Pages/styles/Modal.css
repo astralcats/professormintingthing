@@ -1,0 +1,156 @@
+.modal-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 0px;
+  background-color: black;
+}
+.modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  box-shadow: -10px -10px 20px 0px var(--neon-pink),
+    5px 5px 20px 5px var(--neon-green);
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.modal h1 {
+  font-size: 35px;
+}
+.modal h2 {
+  font-size: 25px;
+}
+.modal p {
+  font-size: 18px;
+}
+.row-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.row-modal h3 {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.box {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: black;
+  height: 150px;
+  width: 100%;
+  gap: 10px;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.box:hover {
+  border-color: var(--neon-pink);
+  cursor: pointer;
+}
+.box h4 {
+  font-size: 14px;
+}
+.box p {
+  font-size: 12px;
+}
+.box img {
+  height: 100%;
+  width: 30%;
+  object-fit: contain;
+}
+.foot img {
+  width: 60px;
+  height: 70px;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.text h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: gray;
+}
+.text a {
+  text-decoration: none;
+  color: grey;
+  font-weight: normal;
+}
+.right-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .modal h1 {
+    font-size: 28px;
+  }
+  .modal h2 {
+    font-size: 23px;
+  }
+  .modal p {
+    font-size: 16px;
+  }
+  .box p {
+    font-size: 12px;
+  }
+  .row-modal {
+    flex-direction: column;
+  }
+  .col {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .box {
+    justify-content: flex-start;
+    height: auto;
+    padding: 10px 0px;
+  }
+  .box img {
+    width: 100px;
+    height: 100%;
+  }
+  .right-box {
+    padding-inline: 10px;
+  }
+
+  .box h4 {
+    font-size: 13px;
+  }
+}

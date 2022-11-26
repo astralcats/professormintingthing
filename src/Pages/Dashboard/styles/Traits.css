@@ -1,0 +1,66 @@
+.traits {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.traits-box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.traits-box:not(:first-child) {
+  margin-top: 6rem;
+}
+.traits-box h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+.traits-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.trait-small-box {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 50px;
+  max-width: 150px;
+  text-align: center;
+  gap: 10px;
+  justify-self: center;
+  align-self: center;
+}
+.trait-small-box p {
+  color: white;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  text-transform: capitalize;
+}
+.trait-img {
+  background-color: #c4d1dc30;
+  border: 2px solid black;
+  width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1408px) {
+  .traits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 760px) {
+  .traits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
