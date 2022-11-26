@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Web3 from "web3/dist/web3.min";
+import Web3 from "web3";
 import { Web3ReactProvider } from "@web3-react/core";
 import MetamaskProvider from "./connectors";
 import { Component } from 'react';

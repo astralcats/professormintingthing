@@ -9,8 +9,7 @@ import gif from "../../Assets/gif.gif";
 import axios from "axios";
 import { useWeb3React } from "@web3-react/core";
 import { contractAbi, contractAddress, rpcUrl } from "../../contracts";
-import Web3 from "web3/dist/web3.min";
-
+import Web3 from "web3";
 
 const Mint = () => {
   const { active, account, library } = useWeb3React();
